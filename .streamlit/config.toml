@@ -1,0 +1,7 @@
+[theme]
+base="dark"
+primaryColor="#4FC3F7"              # Light Blue (for buttons, sliders, etc.)
+backgroundColor="#0D1B2A"           # Main content background (dark navy)
+secondaryBackgroundColor="#1B263B"  # Sidebar background (midnight blue)
+textColor="#E0E1DD"                 # Light gray text for contrast
+font="sans serif"
