@@ -32,8 +32,6 @@ Perform an exploratory data analysis (EDA).
 
 Train a regression model to predict prices.
 
-Track experiments using MLflow.
-
 Develop a REST API with FastAPI.
 
 Create an interactive dashboard with Streamlit.
@@ -59,8 +57,6 @@ Target variable: rental_price_per_day.
 
 Features: car_type, engine_power, fuel, mileage, connect, etc.
 
-Experiment tracking via MLflow (local or remote on AWS S3).
-
 Integration with a FastAPI endpoint.
 
 # 🧱 Project Architecture
@@ -70,8 +66,6 @@ The project is structured around the following components:
 Analysis: Jupyter Notebook for data analysis.
 
 Dashboard: Web interface developed with Streamlit for interactive exploration of results.
-
-MLOps: Use of MLflow to track experiments and manage the model lifecycle.
 
 API: Built with FastAPI for production inference.
 
