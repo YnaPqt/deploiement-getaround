@@ -77,4 +77,4 @@ Deployment: Containerization of the API with Docker for maximum portability and 
   
 - [API Documents](https://yona-p-getaround-api.hf.space/docs)	: API documentation for test endpoint /predict 
   
-- [Dashboard Streamlit](https://yona-p-getaround-dashboard.hf.space) : Analyse EDA + Prédiction prix d'une location
+- [Dashboard Streamlit](https://yona-p-getaround-dashboard.hf.space) : EDA and Prediction of rental price
