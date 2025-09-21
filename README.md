@@ -6,42 +6,73 @@ GetAround is a car-sharing platform that allows individuals to rent cars from pr
 
 As part of this project, participants are expected to conduct data analysis and build machine learning services to support GetAround’s business decisions.
 
-## Context 
+# 📌 Context
 
-When a rental occurs, users must complete a check-in flow at the start and a checkout flow at the end to:
+Getaround, often referred to as the “Airbnb for cars,” allows users to rent a vehicle for a few hours or several days.
+However, late car returns create friction for subsequent customers.
+Therefore, Getaround aims to:
 
-  - Assess the vehicle’s condition and report any pre-existing or new damages.
+Assess a safety buffer between two rentals to reduce conflicts.
 
-  - Compare fuel levels.
+Propose a rental price optimization using Data Science.
 
-  - Record the number of kilometers driven.
+# 🎯 Business Objectives
 
-Rentals can follow one of three flows:
+Study the impact of delays on customer satisfaction and cancellations.
 
-  - Mobile: The driver and owner meet in person and sign the rental agreement on the owner’s smartphone.
+Simulate a minimum gap between two bookings.
 
-  - Connect: The driver unlocks the car remotely via smartphone without meeting the owner.
+Provide recommendations to the product team.
 
-  - Paper contract: A negligible fraction of agreements are still on paper.
+Predict an optimal daily rental price.
 
-## Project Goals🚧
+# 🛠️ Technical Objectives
 
-Participants must analyze late vehicle returns, which disrupt subsequent rentals and impact customer satisfaction. Late returns sometimes force the next renter to wait or even cancel their booking.
+Perform an exploratory data analysis (EDA).
 
-To mitigate this, GetAround plans to implement a minimum delay between rentals so that a vehicle cannot be booked if the check-in or checkout times are too close to another reservation. However, this measure could reduce owner and platform revenues. Therefore, the right trade-off must be identified.
+Train a regression model to predict prices.
 
-The Product Manager requires data insights to inform the following decisions:
+Track experiments using MLflow.
 
-- Threshold: How long should the minimum delay be?
+Develop a REST API with FastAPI.
 
-- Scope: Should the feature be applied to all cars or only to Connect-enabled cars?
+Create an interactive dashboard with Streamlit.
 
-Participants are expected to address these questions:
+Deploy the entire solution with Docker on Hugging Face Spaces.
 
-- What share of owner revenue would potentially be affected by this feature?
+# 📊 Exploratory Analysis
+File: get_around_delay_analysis.xlsx
 
-- How many rentals would be impacted by the feature, based on different thresholds and scopes?
+Analysis of delays (early returns, on-time, late).
 
-- How often are drivers late, and how does lateness impact subsequent rentals?
+Impact of delays on the next booking.
 
-- How many problematic cases would this feature solve, depending on the chosen parameters?
+Check-in type (mobile/manual), average delay duration.
+
+Determination of delay thresholds.
+
+# 🤖 Machine Learning Model Selection
+
+Type: Regression model and decision trees.
+
+Target variable: rental_price_per_day.
+
+Features: car_type, engine_power, fuel, mileage, connect, etc.
+
+Experiment tracking via MLflow (local or remote on AWS S3).
+
+Integration with a FastAPI endpoint.
+
+# 🧱 Project Architecture
+
+The project is structured around the following components:
+
+Analysis: Jupyter Notebook for data analysis.
+
+Dashboard: Web interface developed with Streamlit for interactive exploration of results.
+
+MLOps: Use of MLflow to track experiments and manage the model lifecycle.
+
+API: Built with FastAPI for production inference.
+
+Deployment: Containerization of the API with Docker for maximum portability and reliability.
