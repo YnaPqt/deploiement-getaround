@@ -73,9 +73,8 @@ Deployment: Containerization of the API with Docker for maximum portability and 
 
 
 # Tools / Services
-- API FastAPI  : Service for predicting the rental price https://yona-p-getaround-api.hf.space
+- [API FastAPI](https://yona-p-getaround-api.hf.space) : Service for predicting the rental price 
   
-- API Documents 	: API documentation for test endpoint /predict https://yona-p-getaround-api.hf.space/docs
+- [API Documents](https://yona-p-getaround-api.hf.space/docs)	: API documentation for test endpoint /predict 
   
-  
-- Dashboard Streamlit 	Analyse EDA + Prédiction prix d'une location 	Voir le Dashboard https://yona-p-getaround-dashboard.hf.space 
+- [Dashboard Streamlit](https://yona-p-getaround-dashboard.hf.space) : Analyse EDA + Prédiction prix d'une location
