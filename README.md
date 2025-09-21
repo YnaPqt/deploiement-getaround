@@ -70,3 +70,12 @@ Dashboard: Web interface developed with Streamlit for interactive exploration of
 API: Built with FastAPI for production inference.
 
 Deployment: Containerization of the API with Docker for maximum portability and reliability.
+
+
+# Tools / Services
+- API FastAPI  : Service for predicting the rental price https://yona-p-getaround-api.hf.space
+  
+- API Documents 	: API documentation for test endpoint /predict https://yona-p-getaround-api.hf.space/docs
+  
+  
+- Dashboard Streamlit 	Analyse EDA + Prédiction prix d'une location 	Voir le Dashboard https://yona-p-getaround-dashboard.hf.space 
